@@ -8,7 +8,6 @@ import {Input} from 'yui-md/lib/Input';
 import {setAuth, tryGetAuth} from 'frontend/utils';
 
 import Icon from '@mdi/react';
-import {mdiEmail, mdiLinkedin, mdiTwitter, mdiReceivedium, mdiTelegram} from "@mdi/js/mdi";
 import {globals} from 'static/globals';
 
 const artificialDelay = 100;
@@ -42,9 +41,12 @@ class Login extends React.Component {
   }
 
   render() {
+    if (tryGetAuth()) {
+      this.props.history.push('/me');
+    }
     return (
       <div className={'login-page'}>
-        <div className={'title-area'}>
+        <div className={'info-area'}>
           <div className={'centered subtitle'}>
             <Input label={'ID'} value={this.state.id} changeValue={(str) => this.setField('id', str)}/>
             <Button
@@ -56,8 +58,6 @@ class Login extends React.Component {
               Login
             </Button>
           </div>
-        </div>
-        <div className={'info-area'}>
         </div>
       </div>
     );

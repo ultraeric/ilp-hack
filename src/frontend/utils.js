@@ -7,5 +7,14 @@ function setAuth(user) {
   window.localStorage.setItem('username', user);
 }
 
-export {tryGetAuth, setAuth};
+
+function getHomeUrl() {
+  return window.localStorage.getItem('homeurl');
+}
+
+function setHomeUrl(url) {
+  return window.localStorage.setItem('homeurl', url);
+}
+
+export {tryGetAuth, setAuth , getHomeUrl, setHomeUrl};
 export default setAuth;

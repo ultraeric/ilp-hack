@@ -6,12 +6,20 @@ import {Home} from './Home';
 import {Me} from './Me';
 import {Login} from './Login';
 import {Receive} from './Receive';
+import {Register} from './Register';
+import {Pay} from './Pay';
 
 class Pages extends React.Component {
   constructor() {
     super();
     this.bindAllMethods();
-    }
+  }
+
+  setField(fieldName, val) {
+    let m = {};
+    m[fieldName] = val;
+    this.setState(m);
+  }
 
   render() {
     return (
@@ -19,9 +27,11 @@ class Pages extends React.Component {
         <Route path='*' render={() => {window.scrollTo(0, 0); return null;}}/>
         <Switch>
           <Route path='/home' component={Home}/>
+          <Route path='/me/receive' component={Receive}/>
           <Route path='/me' component={Me}/>
           <Route path='/login' component={Login}/>
-          <Route path='/receive' component={Receive}/>
+          <Route path='/register' component={Register}/>
+          <Route path='/pay' component={Pay}/>
           <Route path='/' component={Home}/>
         </Switch>
       </div>

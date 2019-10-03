@@ -5,11 +5,9 @@ import {Guac} from 'guac-hoc/lib/Guac';
 import {IconButton, Button} from 'yui-md/lib/Button';
 import {Input} from 'yui-md/lib/Input';
 
-import {setAuth, tryGetAuth} from 'frontend/utils';
+import {setAuth, tryGetAuth, setHomeUrl} from 'frontend/utils';
 
-import Icon from '@mdi/react';
-import {mdiEmail, mdiLinkedin, mdiTwitter, mdiReceivedium, mdiTelegram} from "@mdi/js/mdi";
-import {globals} from 'static/globals';
+import axios from 'axios';
 
 const artificialDelay = 100;
 const buttonProps = {
@@ -25,7 +23,7 @@ class Register extends React.Component {
   constructor() {
     super();
     this.bindAllMethods();
-    this.state = {};
+    this.state = {url: 'exampleID'};
   }
 
   setField(fieldName, val) {
@@ -34,30 +32,35 @@ class Register extends React.Component {
     this.setState(m);
   }
 
-  attemptLogin() {
-    let id = this.state.id;
-    setAuth(id);
-    console.log(tryGetAuth());
-    setTimeout(() => this.props.history.push('/me'), 250);
+  attemptRegister() {
+    setAuth(this.state.id);
+    setHomeUrl(this.state.url);
+    var data = JSON.stringify({
+      "receiver": "$connector1.localtunnel.me",
+      "source_amount": 100
+    });
   }
 
   render() {
+    if (tryGetAuth()) {
+      this.props.history.push('/me');
+    }
     return (
       <div className={'register-page'}>
-        <div className={'title-area'}>
+        <div className={'info-area'}>
           <div className={'centered subtitle'}>
             <Input label={'ID'} value={this.state.id} changeValue={(str) => this.setField('id', str)}/>
+            <Input label={'Key'} value={this.state.key} changeValue={(str) => this.setField('key', str)}/>
+            <Input label={'Home Connector ID'} value={this.state.url} changeValue={(str) => this.setField('url', str)}/>
             <Button
               {...buttonProps}
               light
               id={'demoreq-button'}
               style={{backgroundColor: 'rgba(256,256,256,0.25)'}}
-              onClick={this.attemptLogin}>
+              onClick={this.attemptRegister}>
               Register
             </Button>
           </div>
-        </div>
-        <div className={'info-area'}>
         </div>
       </div>
     );

@@ -10,7 +10,7 @@ let mainNavs = [
   new Nav('Home', '/home'),
   new Nav('Me', '/me'),
   new Nav('Login', '/login'),
-  new Nav('Receive', '/login'),
+  new Nav('Receive', '/me/receive'),
   new Nav('Register', '/register')
 ];
 

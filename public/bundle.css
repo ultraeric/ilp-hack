@@ -1305,320 +1305,148 @@ html {
     transition: all 0.5s linear;
     opacity: 1; }
 
-.me-page {
-  min-height: 100vh; }
-  .me-page .title-area {
-    color: rgba(255, 255, 255, 0.95);
-    height: 55vh;
-    min-height: 450px; }
-    .me-page .title-area * {
-      color: rgba(255, 255, 255, 0.95); }
-    .me-page .title-area h4 {
-      padding-top: 50px;
-      margin-top: calc(12.5vh - 75px); }
-    .me-page .title-area .centered.subtitle {
-      margin-top: 50px; }
-    .me-page .title-area #demoreq-button {
-      font-size: 20px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-left: 30px;
-      padding-right: 30px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 1px solid rgba(255, 255, 255, 0.001); }
-    .me-page .title-area #demoreq-button:hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 1px solid rgba(255, 255, 255, 0.75); }
-    .me-page .title-area .ilp-contact .button {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.001);
-      opacity: 0.75; }
-    .me-page .title-area .ilp-contact .button:hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.75);
-      opacity: 1; }
-  .me-page .info-area {
-    padding-left: 5vw;
-    padding-right: 5vw; }
-    .me-page .info-area hr {
-      margin: 1.5em; }
-    .me-page .info-area .product-section {
-      padding-bottom: 16px; }
-    .me-page .info-area .product-item-text, .me-page .info-area .member-item-text {
-      padding-left: 8px;
-      padding-right: 8px; }
-    .me-page .info-area .member-section .member-item {
-      margin-bottom: 16px; }
-    .me-page .info-area .member-section .member-bio {
-      margin: 0; }
-    .me-page .info-area .member-section img.member-img {
-      border-radius: 50%; }
-    .me-page .info-area .member-section .member-item-text {
-      padding-top: 8px; }
-    .me-page .info-area .member-section .button {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.5);
-      opacity: 0.5; }
-    .me-page .info-area .member-section .button:hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.75);
-      opacity: 1; }
-    .me-page .info-area .member-affiliate-section, .me-page .info-area .affiliate-section {
-      text-align: center; }
-      .me-page .info-area .member-affiliate-section img.member-affiliate-img, .me-page .info-area .affiliate-section img.member-affiliate-img {
-        max-width: 150px; }
-      .me-page .info-area .member-affiliate-section img.affiliate-img, .me-page .info-area .affiliate-section img.affiliate-img {
-        max-width: 200px; }
-      .me-page .info-area .member-affiliate-section img.member-affiliate-img, .me-page .info-area .member-affiliate-section img.affiliate-img, .me-page .info-area .affiliate-section img.member-affiliate-img, .me-page .info-area .affiliate-section img.affiliate-img {
-        height: auto;
-        display: inline;
-        vertical-align: middle;
-        margin: 8px; }
-
-.me-slideshow {
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  max-width: 100%;
-  height: 60vh;
-  min-height: 500px;
-  z-index: -100;
-  background-color: #171f1f; }
-  .me-slideshow .img-wrapper {
-    position: absolute;
-    object-fit: cover;
-    max-height: 100%;
-    max-width: 100%;
-    padding: 0px;
-    min-height: 100%;
-    min-width: 100%;
-    filter: brightness(40%); }
-  .me-slideshow img {
-    position: absolute;
-    transition: all 0.5s linear;
-    object-fit: cover;
-    margin: 0px;
-    max-height: 100%;
-    max-width: 100%;
-    padding: 0px;
-    min-height: 100%;
-    min-width: 100%;
-    opacity: 0; }
-  .me-slideshow img.active {
-    transition: all 0.5s linear;
+.me-page .info-area {
+  padding-top: 50px;
+  padding-left: 15vw;
+  padding-right: 15vw; }
+  .me-page .info-area p.centered.title {
+    margin-top: 3.5vh;
+    margin-bottom: 2.5vh; }
+  .me-page .info-area .login-card {
+    background-color: rgba(255, 255, 255, 0.9); }
+  .me-page .info-area .button {
+    margin-left: calc(25px + 15vw);
+    margin-right: calc(25px + 15vw);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.25); }
+  .me-page .info-area .button:hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.75);
     opacity: 1; }
+
+#qrcenter {
+  text-align: center; }
 
 .login-page {
   min-height: 100vh; }
-  .login-page .title-area {
-    color: rgba(255, 255, 255, 0.95);
-    height: 55vh;
-    min-height: 450px; }
-    .login-page .title-area * {
-      color: rgba(255, 255, 255, 0.95); }
-    .login-page .title-area h4 {
-      padding-top: 50px;
-      margin-top: calc(12.5vh - 75px); }
-    .login-page .title-area .centered.subtitle {
-      margin-top: 50px; }
-    .login-page .title-area #demoreq-button {
-      font-size: 20px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-left: 30px;
-      padding-right: 30px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 1px solid rgba(255, 255, 255, 0.001); }
-    .login-page .title-area #demoreq-button:hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 1px solid rgba(255, 255, 255, 0.75); }
-    .login-page .title-area .ilp-contact .button {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.001);
-      opacity: 0.75; }
-    .login-page .title-area .ilp-contact .button:hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.75);
-      opacity: 1; }
   .login-page .info-area {
-    padding-left: 5vw;
-    padding-right: 5vw; }
-    .login-page .info-area hr {
-      margin: 1.5em; }
-    .login-page .info-area .product-section {
-      padding-bottom: 16px; }
-    .login-page .info-area .product-item-text, .login-page .info-area .member-item-text {
-      padding-left: 8px;
-      padding-right: 8px; }
-    .login-page .info-area .member-section .member-item {
-      margin-bottom: 16px; }
-    .login-page .info-area .member-section .member-bio {
-      margin: 0; }
-    .login-page .info-area .member-section img.member-img {
-      border-radius: 50%; }
-    .login-page .info-area .member-section .member-item-text {
-      padding-top: 8px; }
-    .login-page .info-area .member-section .button {
+    padding-top: 50px;
+    padding-left: 15vw;
+    padding-right: 15vw; }
+    .login-page .info-area p.centered.title {
+      margin-top: 3.5vh;
+      margin-bottom: 2.5vh; }
+    .login-page .info-area .login-card {
+      background-color: rgba(255, 255, 255, 0.9); }
+    .login-page .info-area .button {
+      margin-left: calc(25px + 15vw);
+      margin-right: calc(25px + 15vw);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.5);
-      opacity: 0.5; }
-    .login-page .info-area .member-section .button:hover {
+      box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.25); }
+    .login-page .info-area .button:hover {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.75);
       opacity: 1; }
-    .login-page .info-area .member-affiliate-section, .login-page .info-area .affiliate-section {
-      text-align: center; }
-      .login-page .info-area .member-affiliate-section img.member-affiliate-img, .login-page .info-area .affiliate-section img.member-affiliate-img {
-        max-width: 150px; }
-      .login-page .info-area .member-affiliate-section img.affiliate-img, .login-page .info-area .affiliate-section img.affiliate-img {
-        max-width: 200px; }
-      .login-page .info-area .member-affiliate-section img.member-affiliate-img, .login-page .info-area .member-affiliate-section img.affiliate-img, .login-page .info-area .affiliate-section img.member-affiliate-img, .login-page .info-area .affiliate-section img.affiliate-img {
-        height: auto;
-        display: inline;
-        vertical-align: middle;
-        margin: 8px; }
+  .login-page .login-background {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    max-width: 100%;
+    height: 150vh;
+    min-height: 900px;
+    z-index: -100;
+    background-color: #171f1f; }
+    .login-page .login-background .img-wrapper {
+      position: absolute;
+      object-fit: cover;
+      max-height: 100%;
+      max-width: 100%;
+      padding: 0px;
+      min-height: 100%;
+      min-width: 100%;
+      filter: brightness(75%); }
+    .login-page .login-background img {
+      position: absolute;
+      transition: all 0.5s linear;
+      object-fit: cover;
+      margin: 0px;
+      max-height: 100%;
+      max-width: 100%;
+      padding: 0px;
+      min-height: 100%;
+      min-width: 100%;
+      opacity: 0.5; }
 
 .receive-page {
   min-height: 100vh; }
-  .receive-page .title-area {
-    color: rgba(255, 255, 255, 0.95);
-    height: 55vh;
-    min-height: 450px; }
-    .receive-page .title-area * {
-      color: rgba(255, 255, 255, 0.95); }
-    .receive-page .title-area h4 {
-      padding-top: 50px;
-      margin-top: calc(12.5vh - 75px); }
-    .receive-page .title-area .centered.subtitle {
-      margin-top: 50px; }
-    .receive-page .title-area #demoreq-button {
-      font-size: 20px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-left: 30px;
-      padding-right: 30px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 1px solid rgba(255, 255, 255, 0.001); }
-    .receive-page .title-area #demoreq-button:hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 1px solid rgba(255, 255, 255, 0.75); }
-    .receive-page .title-area .ilp-contact .button {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.001);
-      opacity: 0.75; }
-    .receive-page .title-area .ilp-contact .button:hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.75);
-      opacity: 1; }
   .receive-page .info-area {
-    padding-left: 5vw;
-    padding-right: 5vw; }
-    .receive-page .info-area hr {
-      margin: 1.5em; }
-    .receive-page .info-area .product-section {
-      padding-bottom: 16px; }
-    .receive-page .info-area .product-item-text, .receive-page .info-area .member-item-text {
-      padding-left: 8px;
-      padding-right: 8px; }
-    .receive-page .info-area .member-section .member-item {
-      margin-bottom: 16px; }
-    .receive-page .info-area .member-section .member-bio {
-      margin: 0; }
-    .receive-page .info-area .member-section img.member-img {
-      border-radius: 50%; }
-    .receive-page .info-area .member-section .member-item-text {
-      padding-top: 8px; }
-    .receive-page .info-area .member-section .button {
+    padding-top: 50px;
+    padding-left: 20vw;
+    padding-right: 20vw; }
+    .receive-page .info-area p.centered.title {
+      margin-top: 3.5vh;
+      margin-bottom: 2.5vh; }
+    .receive-page .info-area .login-card {
+      background-color: rgba(255, 255, 255, 0.9); }
+    .receive-page .info-area .button {
+      margin-left: calc(25px + 15vw);
+      margin-right: calc(25px + 15vw);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.5);
-      opacity: 0.5; }
-    .receive-page .info-area .member-section .button:hover {
+      box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.25); }
+    .receive-page .info-area .button:hover {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.75);
       opacity: 1; }
-    .receive-page .info-area .member-affiliate-section, .receive-page .info-area .affiliate-section {
-      text-align: center; }
-      .receive-page .info-area .member-affiliate-section img.member-affiliate-img, .receive-page .info-area .affiliate-section img.member-affiliate-img {
-        max-width: 150px; }
-      .receive-page .info-area .member-affiliate-section img.affiliate-img, .receive-page .info-area .affiliate-section img.affiliate-img {
-        max-width: 200px; }
-      .receive-page .info-area .member-affiliate-section img.member-affiliate-img, .receive-page .info-area .member-affiliate-section img.affiliate-img, .receive-page .info-area .affiliate-section img.member-affiliate-img, .receive-page .info-area .affiliate-section img.affiliate-img {
-        height: auto;
-        display: inline;
-        vertical-align: middle;
-        margin: 8px; }
+
+#qrcenter {
+  text-align: center; }
 
 .register-page {
   min-height: 100vh; }
-  .register-page .title-area {
-    color: rgba(255, 255, 255, 0.95);
-    height: 55vh;
-    min-height: 450px; }
-    .register-page .title-area * {
-      color: rgba(255, 255, 255, 0.95); }
-    .register-page .title-area h4 {
-      padding-top: 50px;
-      margin-top: calc(12.5vh - 75px); }
-    .register-page .title-area .centered.subtitle {
-      margin-top: 50px; }
-    .register-page .title-area #demoreq-button {
-      font-size: 20px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      padding-left: 30px;
-      padding-right: 30px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 1px solid rgba(255, 255, 255, 0.001); }
-    .register-page .title-area #demoreq-button:hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      border: 1px solid rgba(255, 255, 255, 0.75); }
-    .register-page .title-area .ilp-contact .button {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.001);
-      opacity: 0.75; }
-    .register-page .title-area .ilp-contact .button:hover {
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.75);
-      opacity: 1; }
   .register-page .info-area {
-    padding-left: 5vw;
-    padding-right: 5vw; }
-    .register-page .info-area hr {
-      margin: 1.5em; }
-    .register-page .info-area .product-section {
-      padding-bottom: 16px; }
-    .register-page .info-area .product-item-text, .register-page .info-area .member-item-text {
-      padding-left: 8px;
-      padding-right: 8px; }
-    .register-page .info-area .member-section .member-item {
-      margin-bottom: 16px; }
-    .register-page .info-area .member-section .member-bio {
-      margin: 0; }
-    .register-page .info-area .member-section img.member-img {
-      border-radius: 50%; }
-    .register-page .info-area .member-section .member-item-text {
-      padding-top: 8px; }
-    .register-page .info-area .member-section .button {
+    padding-top: 50px;
+    padding-left: 20vw;
+    padding-right: 20vw; }
+    .register-page .info-area p.centered.title {
+      margin-top: 3.5vh;
+      margin-bottom: 2.5vh; }
+    .register-page .info-area .login-card {
+      background-color: rgba(255, 255, 255, 0.9); }
+    .register-page .info-area .button {
+      margin-left: calc(25px + 15vw);
+      margin-right: calc(25px + 15vw);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.5);
-      opacity: 0.5; }
-    .register-page .info-area .member-section .button:hover {
+      box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.25); }
+    .register-page .info-area .button:hover {
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.75);
       opacity: 1; }
-    .register-page .info-area .member-affiliate-section, .register-page .info-area .affiliate-section {
-      text-align: center; }
-      .register-page .info-area .member-affiliate-section img.member-affiliate-img, .register-page .info-area .affiliate-section img.member-affiliate-img {
-        max-width: 150px; }
-      .register-page .info-area .member-affiliate-section img.affiliate-img, .register-page .info-area .affiliate-section img.affiliate-img {
-        max-width: 200px; }
-      .register-page .info-area .member-affiliate-section img.member-affiliate-img, .register-page .info-area .member-affiliate-section img.affiliate-img, .register-page .info-area .affiliate-section img.member-affiliate-img, .register-page .info-area .affiliate-section img.affiliate-img {
-        height: auto;
-        display: inline;
-        vertical-align: middle;
-        margin: 8px; }
+
+.pay-page {
+  min-height: 100vh; }
+  .pay-page .info-area {
+    padding-top: 50px;
+    padding-left: 15vw;
+    padding-right: 15vw; }
+    .pay-page .info-area p.centered.title {
+      margin-top: 3.5vh;
+      margin-bottom: 2.5vh; }
+    .pay-page .info-area .login-card {
+      background-color: rgba(255, 255, 255, 0.9); }
+    .pay-page .info-area .button {
+      margin-left: calc(25px + 15vw);
+      margin-right: calc(25px + 15vw);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.25); }
+    .pay-page .info-area .button:hover {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 0 0 1px rgba(12, 16, 16, 0.75);
+      opacity: 1; }
+
+#qrcenter {
+  text-align: center; }
 
 .page {
   min-height: 50vh;

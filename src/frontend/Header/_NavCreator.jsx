@@ -81,7 +81,7 @@ class _NavCreator extends React.Component {
   }
 
   calcSmallNavComponents(props) {
-    let navs = props.navs;
+    let navs = mainNavs;
     let navComponents = [
     ];
 
