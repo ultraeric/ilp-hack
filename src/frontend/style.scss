@@ -1,0 +1,21 @@
+// @import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat');
+
+@import '~static/styles/style.scss';
+@import './Pages/style.scss';
+@import './Footer/style.scss';
+@import './Header/style.scss';
+
+.app-root {
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  opacity: 1;
+}
+
+.app-root, input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.content-container {
+  margin-bottom: 50px;
+}

@@ -1,0 +1,68 @@
+@import './_Backdrop/style.scss';
+@import './Home/style.scss';
+@import './Me/style.scss';
+@import './Login/style.scss';
+@import './Receive/style.scss';
+@import './Register/style.scss';
+
+
+.page {
+  min-height: 50vh;
+  width: 100%;
+  box-sizing: border-box;
+  h3.page-title {
+    margin-top: 10vh;
+  }
+  > * {
+    min-height: 50vh;
+    @media #{$tablet-query} {
+      padding-left: calc(10% - 24px);
+      padding-right: calc(10% - 24px);
+    }
+
+    @media #{$desktop-query} {
+      padding-left: calc(25% - 220px);
+      padding-right: calc(25% - 220px);
+    }
+  }
+}
+
+// For any informational pages
+.info-page {
+  min-height: 100vh;
+  > img {
+    position: absolute;
+    right: 0;
+  }
+
+  .title-area {
+    min-height: 100vh;
+    padding-top: 25vh;
+    position: relative;
+    padding-bottom: 20vh;
+    max-height: 100%;
+    box-sizing: border-box;
+  }
+
+  .info-area {
+    .section-header {
+      margin-top: 7.5vh;
+    }
+    .title-small {
+      font-size: 1.1em;
+    }
+    .subheader-small {
+      color: $text-color-subheader;
+      margin-top: -12px;
+      font-size: 0.9em;
+      line-height: 1.1em;
+    }
+    hr.title-break {
+      margin-top: 20px;
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-bottom: 20px;
+    }
+  }
+}

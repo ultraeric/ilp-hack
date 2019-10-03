@@ -1,0 +1,55 @@
+
+label.text-input-label {
+  color: $text-color-subheader;
+  display: block;
+  text-align: left;
+  font-size: inherit;
+}
+
+input[type=text], select {
+  transition: all $standard-time $standard-transition-curve;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: none;
+  border-width: 0px;
+  width: 100%;
+  font-size: inherit;
+  height: inherit;
+  text-align: left;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba($text-color-subheader, 0.36);
+  background-color: transparent;
+}
+
+select {
+  margin-top: 4px;
+  height: 32px;
+}
+
+input[type=text]:hover, select:hover {
+  transition: all $standard-time $standard-transition-curve;
+  outline: none;
+  border-bottom-color: rgba($text-color-subheader, 0.65);
+}
+
+input[type=text]:hover + label.text-input-label {
+  color: rgba($text-color-subheader, 0.65);
+  font-weight: bold;
+}
+
+input[type=text]:focus, select:focus {
+  transition: all $standard-time $standard-transition-curve;
+  outline: none;
+  border-bottom-color: $accent-color;
+}
+
+input[type=text]:focus + label.text-input-label {
+  color: $accent-color;
+  font-weight: bold;
+}
+
+label.text-input-label {
+  margin-bottom: 16px;
+  font-size: 12px;
+  transition: all $standard-time $standard-transition-curve;
+}

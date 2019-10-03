@@ -1,0 +1,3 @@
+[submodule "yui-md"]
+	path = yui-md
+	url = git@github.com:ultraeric/yui-md.git
