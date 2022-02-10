@@ -50,7 +50,7 @@
     "file-loader": "^2.0.0",
     "image-webpack-loader": "^3.6.0",
     "mini-css-extract-plugin": "^0.4.2",
-    "node-sass": "^4.9.3",
+    "node-sass": "^7.0.0",
     "responsive-loader": "^1.1.0",
     "sass-loader": "^6.0.6",
     "sharp": "^0.20.7",
